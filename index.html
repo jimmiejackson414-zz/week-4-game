@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Week 4 Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	
+	<!-- Title -->
+    <div id="titleHeader">
+        <div>
+            <h1>NBA/RPG</h1>
+        </div>
+        <div>
+            <h2>Choose a team!</h2>
+        </div>
+    </div>
+
+    <!-- Characters -->
+    <div class="container">
+        <div class="row" id="teams">
+            <div class="col-md-3" style="height:150px">
+                <img id="spursChar" class="img-responsive img-rounded" src="http://petapixel.com/assets/uploads/2013/06/Spurs_white_grp_SEALE.jpg">
+                <p class="gallery-text"><strong>Spurs</strong> HP: 100</p>
+            </div>
+            <div class="col-md-3" style="height:150px">
+                <img id="warriorsChar" class="img-responsive img-rounded" src="http://cache4.asset-cache.net/gc/456391780-klay-thompson-and-stephen-curry-of-the-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=GkZZ8bf5zL1ZiijUmxa7QSBmEO%2F7y9IM7uQ%2BGQDD3JbRBoRFozGJyJFnwwR9EBWCtYt05pjz6IUEAMoAgd%2BJeEhBmdc%2BPuV1wmZDjlDzb2mB9DXmvm999lXUviPh9UjV">
+                <p class="gallery-text"><strong>Warriors</strong> HP: 110</p>
+            </div>
+            <div class="col-md-3" style="height:150px">
+                <img id="cavaliersChar" class="img-responsive img-rounded" src="http://www.gannett-cdn.com/-mm-/ab8b508fa8d15f0c5b2e27f54fb927146a4d72b1/c=0-90-2000-2759&r=537&c=0-0-534-712/local/-/media/USATODAY/USATODAY/2014/07/10/1404969099000-USP-NBA-PLAYOFFS-CLEVELAND-CAVALIERS-AT-BOSTON-CE-31110112.JPG">
+                <p class="gallery-text"><strong>Cavaliers</strong> HP: 90</p>
+            </div>
+            <div class="col-md-3" style="height:150px">
+                <img id="thunderChar" class="img-responsive img-rounded" src="http://www4.pictures.zimbio.com/gi/Russell+Westbrook+Kevin+Durant+Oklahoma+City+uWaw-bBuMEHl.jpg">
+                <p class="gallery-text"><strong>Thunder</strong> HP: 95</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row with box titles -->
+    <div class="container">
+        <div class="row">
+            <h2 id="yourTeamTitle">Your team</h2>
+            <h2 id="opponentsTitle">Choose someone to school</h2>
+        </div>
+    </div>
+    
+    <!-- Your team and opponents boxes -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" id="yourTeam">
+                <!-- <p>Test</p> -->
+            </div>
+            <div class="col-md-5" id="yourOpponents">
+                <!-- <p>Test</p> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
