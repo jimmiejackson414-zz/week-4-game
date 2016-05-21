@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+var spursChar = false;
 var teamsArray = [
 	{
 		name: "Spurs",
@@ -27,33 +27,27 @@ var teamsArray = [
 	},
 ]
 
-	// Gets link for audio
-	var audioElement = document.createElement('audio');
-	audioElement.setAttribute('src', '/images/basketballSounds.mp3')
-	audioElement.load();
-	audioElement.addEventListener("canplay", function() { 
-  		audioElement.play(); 
-	}, true);
-
-	function play_sound(url){
-    if(play_html5_audio){
-        var snd = new Audio(url);
-        //code
-        snd.play();
-    }else{          
-        var sound = $("<embed id='sound' type='audio/mpeg' />");
-        //code
-        $('body').append(sound);
-    }
-}
-
-play_sound('beep.mp3');
-
-
-	// When user clicks team, that team moves to Your Team div
-	$("body").on("click", "teamsArray", function(event){
-		var userTeam = click;
-
-
+	// When user clicks team, that team moves to Your Team div,
+	// and other teams move to Opponents div.
+	$("body").on("click", spursChar, function(){
+		if (spursChar == true){
+			$("#spursChar").append("#yourTeam");
+			$("#warriorsChar", "#cavaliersChar", "#thunderChar").append("#yourOpponents");
+		} 
+		if (warriorsChar == true){
+			$("#warriorsChar").append("#yourTeam");
+			$("#spursChar", "#cavaliersChar", "#thunderChar").append("#yourOpponents");	
+		}
+		if (cavaliersChar == true){
+			$("#cavaliersChar").append("#yourTeam");
+			$("#warriorsChar", "#spursChar", "#thunderChar").append("#yourOpponents");
+		}
+		if (thunderChar == true){
+			$("#thunderChar").append("#yourTeam");
+			$("#warriorsChar", "#cavaliersChar", "#spursChar").append("#yourOpponents");
+		}
 	})
+
+	
+
 })
